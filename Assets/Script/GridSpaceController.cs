@@ -21,10 +21,10 @@ public class GridSpaceController : MonoBehaviour
         DoesNotHaveSelfMovingFunctions,
         HasForceFunctions,
         DoesNotHaveForceFunctions,
-        resistance,
         bouancyfunction,
         densityproperty,
-        mass,
+        mass, //Informs RigidBody Component
+        drag, //Informs RigidBody Component
         flamability,
         inertiaFunction,
         albedoReflectivityOfLight,
@@ -34,10 +34,14 @@ public class GridSpaceController : MonoBehaviour
         Volume,
         EMEmissionsQualityOfProducedLight,
         Vibration,
+        resistance,
+        /*
+        resistance could be made up of these three types of resistance and each type of collision could be typed with a type making resistence determined and easily coded, but complex enough to mimic the real thing.
         punctureResistence,
         slashingResistence,
         bludgeoningResistence,
-        AllowMixing/*Does it mix with the tiles around, Solid unlikely*/,
+        */
+        AllowMixing/*Does it mix with the tiles around, Solid unlikely, sand mixes tho.*/,
         stickiness/**/,
         elastisity,
         Absorption,
