@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="GeneralSettings" style="padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+        <uie:ObjectField label="Prefab" allow-scene-objects="false" name="Prefab" type="UnityEngine.GameObject, UnityEngine.CoreModule" />
+        <uie:LayerMaskField label="Layer" name="Layer" />
+    </ui:VisualElement>
+    <ui:VisualElement name="InstantiationSettings">
+        <ui:Label text="Rotation" display-tooltip-when-elided="true" name="Rotation" style="padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 2px; font-size: 15px; -unity-font-style: bold; -unity-font: url(&apos;Library/unity default resources&apos;); -unity-text-align: upper-center; color: rgb(243, 243, 243);" />
+        <uie:Vector3Field label="MinRotation" name="MinRotation" />
+        <uie:Vector3Field label="MaxRotation" name="MaxRotation" />
+        <ui:Label text="Scale" display-tooltip-when-elided="true" name="Scale" style="padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 2px; font-size: 15px; -unity-font-style: bold; -unity-font: url(&apos;bold&apos;); -unity-text-align: upper-center; color: rgb(250, 0, 0); height: 29px; width: 357px;" />
+        <uie:FloatField label="MinScale" value="0.07" name="MinScale" />
+        <uie:FloatField label="MaxScale" value="1" name="MaxScale" />
+    </ui:VisualElement>
+    <ui:VisualElement name="AdvancedSettings" style="padding-top: 20px;">
+        <ui:Toggle label="Active" name="Active" />
+        <ui:Toggle label="AllignToGrid" name="AllignToGrid" />
+    </ui:VisualElement>
+</ui:UXML>
