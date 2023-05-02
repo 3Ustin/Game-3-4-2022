@@ -6,7 +6,7 @@ using UnityEngine;
 // creating a heirarcy of classes that denote different creatures. 
 public class Life : MonoBehaviour
 {
-    //Variables that this object CAN have.
+    //Variables that this object CAN have
     //Assign the varibles that this one DOES have.
 
     //Growth and Development |B| All organisms grow and develop following specific instructions coded for by their genes. These genes provide instructions that will direct cellular growth and development, ensuring that a species’ young will grow up to exhibit many of the same characteristics as its parents.
